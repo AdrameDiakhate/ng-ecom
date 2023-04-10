@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { User } from 'src/app/models/user';
 
 @Component({
@@ -9,29 +9,29 @@ import { User } from 'src/app/models/user';
 })
 export class RegisterFormComponent implements OnInit {
 
-  registerForm:FormGroup
+  registerForm:UntypedFormGroup
   isregisterFormSubmitted=false
   
   @Output() userRegistered = new EventEmitter<User>();
 
 
-  constructor(private formBuilder:FormBuilder) {
+  constructor(private formBuilder:UntypedFormBuilder) {
 
     this.registerForm=this.formBuilder.group({
-      firstName: new FormControl('',[
+      firstName: new UntypedFormControl('',[
         Validators.required,
         Validators.minLength(3)
       ]),
-      lastName: new FormControl('',[
+      lastName: new UntypedFormControl('',[
         Validators.required,
         Validators.minLength(3)
       ]),
-      email: new FormControl('',[
+      email: new UntypedFormControl('',[
         Validators.required,
         Validators.minLength(6),
         Validators.email
       ]),
-      password: new FormControl('',[
+      password: new UntypedFormControl('',[
         Validators.required,
         Validators.minLength(7)
       ]),
