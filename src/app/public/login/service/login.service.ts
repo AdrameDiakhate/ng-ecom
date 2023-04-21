@@ -1,3 +1,4 @@
+import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,13 @@ import { Injectable } from '@angular/core';
 })
 export class LoginService {
 
-  constructor() { }
+  constructor(private afAuth:AngularFireAuth) { }
+
+  signIn(email:string,password:string){
+    return this.afAuth.signInWithEmailAndPassword(email,password)
+  }
+
+  signOut(){
+    this.afAuth.signOut()
+  }
 }

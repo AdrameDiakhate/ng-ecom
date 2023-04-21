@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { RegisterRoutingModule } from './register-routing.module';
 import { RegisterComponent } from './register.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 
 
@@ -16,7 +17,8 @@ import { RegisterFormComponent } from './register-form/register-form.component';
   imports: [
     CommonModule,
     RegisterRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireAuthModule
   ]
 })
 export class RegisterModule { }

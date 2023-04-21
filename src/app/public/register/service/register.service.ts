@@ -13,14 +13,4 @@ export class RegisterService {
     return this.afAuth.createUserWithEmailAndPassword(email, password);
   }
 
-  // signUpWithEmailAndPwd(email:string,password:string){
-  //   this.afAuth.createUserWithEmailAndPassword(email,password).then((data)=>{
-  //     this.router.navigate(['/'])
-  //     console.log(data)
-  //   },
-  //   (error)=>{
-  //     alert(error)
-  //   }
-  //   )
-  // }
 }

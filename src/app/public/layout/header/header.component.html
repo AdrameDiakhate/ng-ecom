@@ -1,14 +1,103 @@
-<ul class="nav">
-    <li class="nav-item">
+<!-- <ul class="nav"> -->
+  <div class="first-header">
+      <div class="left-header">
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              CFA
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">FR CFA</a></li>
+              <li><a class="dropdown-item" href="#">USD</a></li>
+              <li><a class="dropdown-item" href="#">EUR</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://lazeapostolski.com/sophia-ecommerce/assets/images/flags/fr.svg" />
+              Français
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="https://lazeapostolski.com/sophia-ecommerce/assets/images/flags/fr.svg" />
+                  Français
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="https://lazeapostolski.com/sophia-ecommerce/assets/images/flags/gb.svg" />
+                  English
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="right-header">
+          <div class="header-icon">
+            <a routerLink="/">
+              <i class="bi bi-suit-heart"></i>
+              <span>WISHLIST</span>
+            </a>
+          </div>
+          <div class="header-icon">
+            <a routerLink="/">
+              <i class="bi bi-arrow-repeat"></i>  
+              <span>COMPARE</span>
+            </a>
+          </div>
+          <div class="header-icon">
+            <a routerLink="/">
+              <i class="bi bi-person"></i>
+              <span>My Account</span>
+            </a>
+          </div>
+      </div>
+  </div>
+
+  <div class="main-header">
+    <div class="logo">
+      <img src="../../../../assets/images/Logo-alibaba-group.jpg" />
+    </div>
+    <div class="search-form">
+      <input class="form-control"  id="search" placeholder="Type to search...">
+      <button type="button" class="btn btn-secondary">Rechercher</button>
+    </div>
+    <div class="help-line">
+      <i class="bi bi-telephone"></i>
+      <span class="helpline-text">Helpline:</span>
+      <span class="tel">77 845 24 40</span>
+    </div>
+    <div class="cart">
+      <i class="bi bi-cart"></i>
+      <span class="price">1000 FR FCFA</span>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <li class="nav-item">
       <a class="nav-link active" aria-current="page" href="/">Accueil</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="/products">Produits</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" *ngIf="!isSignedIn">
       <a class="nav-link" href="/login">Connexion</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="/register">Inscription</a>
     </li>
-  </ul>
+    <li class="nav-item" *ngIf="isSignedIn">
+      <a class="nav-link" (click)="signOut()">Déconnexion</a>
+    </li> -->
+  <!-- </ul> -->

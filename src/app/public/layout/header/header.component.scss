@@ -1,0 +1,113 @@
+.first-header{
+    background-color: #222222;
+    color: #9C9A9C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    .left-header{
+        display: flex;
+        justify-content: space-around;
+        .dropdown{
+            margin-left: 60px;
+            a{
+                font-size: 15px;
+                background-color: inherit;
+                border: none;
+            }
+            img{
+                width: 20px;
+                height: 15px;
+            }
+        }
+    }
+    .right-header{
+        display: flex;
+        .header-icon{
+            margin-left: 50px;
+            font-weight: bold;
+            font-size: 15px;
+            a{
+                text-decoration: none;
+                color: #9C9A9C;
+            }
+            span{
+                position: relative;
+                left: 7px;
+            }
+        }
+    }
+}
+
+.main-header{
+    width: 1890px;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EF6D27;
+    color: #fff;
+    font-weight:bold;
+    .logo{
+        img{
+            width: 140px;
+            margin: 17px;
+            position: relative;
+            left: 70px;
+        }
+    }
+    .search-form{
+        display: flex;
+        input{
+            height: 40px;
+            width: 700px;
+        }
+        input::placeholder{
+            color: #999999;
+            font-size: 15px;
+        }
+        button{
+            width: 125px;
+            height: 40px;
+            background-color: #333333;
+            position: relative;
+            right: 125px;
+            border-color: #333333;
+        }
+    }
+    .help-line{
+        position: relative;
+        right: 150px;
+        i{
+            font-size: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+            position: relative;
+            bottom: 5px;
+            // margin-bottom: 500px;
+        }
+        .helpline-text{
+            font-size: 12px;
+            position: relative;
+            bottom: 25px;
+        }
+        .tel{
+            font-size: 20px;
+            position: relative;
+            right: 50px;
+        }
+    }
+    .cart{
+        position: relative;
+        right: 300px;
+        i{
+            font-size: 20px;
+        }
+        .price{
+            position: relative;
+            left: 5px;
+            top: 5px;
+            font-size: 15px;
+        }
+    }
+}
